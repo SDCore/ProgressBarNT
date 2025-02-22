@@ -4,43 +4,53 @@ body
     margin: 0
     padding: 0
     height: 100vh
+    display: flex
+    align-items: center
     background: #373F51
+    justify-content: center
     font-family: 'JetBrains Mono', monospace
 
 .progressBars
     gap: 25px
     width: 70%
-    height: 100%
     display: flex
     margin: 0 auto
+    flex-wrap: wrap
     align-items: center
     justify-content: center
 
-.barContainer
+.timeBarContainer
     width: 100%
+    padding: 8px
     border-radius: 6px
-    background: #5A6379
-    box-shadow: rgba(25, 26, 27, 0.2) 0px 4px 14px 0px
+    background: #4F586E
+    flex: calc(20% - 50px)
+    box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
 
-    .barTitle
-        padding: 8px
-        font-size: 16pt
-        color: #212121
-        font-weight: light
+.yearBarContainer
+    width: 100%
+    padding: 8px
+    border-radius: 6px
+    background: #4F586E
+    flex: calc(33% - 50px)
+    box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
 
-    .progressBar
-        width: 100%
-        height: 5px
-        display: block
-        background: #2C2F3D
-        border-bottom-left-radius: 6px
-        border-bottom-right-radius: 6px
+.barTitle
+    font-size: 16pt
+    color: #212121
+    font-weight: light
 
-    .progressInner
-        width: 50%
-        height: 5px
-        display: block
-        background: #FF9F17
-        transition: width 0.5s
-        border-bottom-left-radius: 6px
-        border-bottom-right-radius: 6px
+.progressBar
+    width: 100%
+    height: 5px
+    display: block
+    border-radius: 6px
+    background: #45485A
+
+.progressInner
+    width: 0%
+    height: 5px
+    display: block
+    border-radius: 6px
+    background: #FF9F17
+    transition: width 0.5s
