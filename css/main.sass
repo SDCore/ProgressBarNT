@@ -1,32 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap')
+    
 body
     margin: 0
     padding: 0
+    height: 100vh
     background: #373F51
+    font-family: 'JetBrains Mono', monospace
 
-#secondProgressBar
-    top: 0
-    left: 0
+.progressBars
+    gap: 25px
+    width: 70%
+    height: 100%
+    display: flex
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+
+.barContainer
     width: 100%
-    height: 5px
-    background: #FF0000
-    transition: width 0.5s
+    border-radius: 6px
+    background: #5A6379
+    box-shadow: rgba(25, 26, 27, 0.2) 0px 4px 14px 0px
 
-#secondProgressBar-Inner
-    width: 50%
-    height: 5px
-    background: #00FF00
-    transition: width 0.5s
+    .barTitle
+        padding: 8px
+        font-size: 16pt
+        color: #212121
+        font-weight: light
 
-#hourProgressBar
-    top: 0
-    left: 0
-    width: 100%
-    height: 5px
-    background: #FF0000
-    transition: width 0.5s
+    .progressBar
+        width: 100%
+        height: 5px
+        display: block
+        background: #2C2F3D
+        border-bottom-left-radius: 6px
+        border-bottom-right-radius: 6px
 
-#hourProgressBar-Inner
-    width: 50%
-    height: 5px
-    background: #00FF00
-    transition: width 0.5s
+    .progressInner
+        width: 50%
+        height: 5px
+        display: block
+        background: #FF9F17
+        transition: width 0.5s
+        border-bottom-left-radius: 6px
+        border-bottom-right-radius: 6px

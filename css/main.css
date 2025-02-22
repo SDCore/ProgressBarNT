@@ -1,41 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   background: #373F51;
+  font-family: "JetBrains Mono", monospace;
 }
 
-#secondProgressBar {
-  top: 0;
-  left: 0;
+.progressBars {
+  gap: 25px;
+  width: 70%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.barContainer {
+  width: 100%;
+  border-radius: 6px;
+  background: #5A6379;
+  -webkit-box-shadow: rgba(25, 26, 27, 0.2) 0px 4px 14px 0px;
+          box-shadow: rgba(25, 26, 27, 0.2) 0px 4px 14px 0px;
+}
+.barContainer .barTitle {
+  padding: 8px;
+  font-size: 16pt;
+  color: #212121;
+  font-weight: light;
+}
+.barContainer .progressBar {
   width: 100%;
   height: 5px;
-  background: #FF0000;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  display: block;
+  background: #2C2F3D;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
-
-#secondProgressBar-Inner {
+.barContainer .progressInner {
   width: 50%;
   height: 5px;
-  background: #00FF00;
+  display: block;
+  background: #FF9F17;
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
-}
-
-#hourProgressBar {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: #FF0000;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-}
-
-#hourProgressBar-Inner {
-  width: 50%;
-  height: 5px;
-  background: #00FF00;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
