@@ -5,37 +5,65 @@
 		<title>New Tab</title>
 
 		<link rel="stylesheet" type="text/css" href="css/main.min.css" />
-
-		<!-- style the progress bars so the javascript works -->
-		<style>
-			#progress-bar {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 5px;
-				background-color: #000;
-			}
-
-			#progress-bar-inner {
-				width: 50%;
-				height: 100%;
-
-				background-color: #0f0;
-			}
-		</style>
 	</head>
 
 	<body>
-		<!-- generate a basic div with a progress bar in the middle that will be controlled by javascript -->
-		<div id="secondProgressBar">
-			<div id="secondProgressBar-Inner"></div>
-		</div>
+		<div class="progressBars">
+			<div class="timeBarContainer">
+				<span class="barTitle">Seconds</span>
+				<span id="secondProgress" class="progressBar">
+					<span id="secondProgressBar" class="progressInner"></span>
+				</span>
+			</div>
 
-		<br />
+			<div class="timeBarContainer">
+				<span class="barTitle">Minutes</span>
+				<span id="minuteProgress" class="progressBar">
+					<span id="minuteProgressBar" class="progressInner"></span>
+				</span>
+			</div>
 
-		<div id="hourProgressBar">
-			<div id="hourProgressBar-Inner"></div>
+			<div class="timeBarContainer">
+				<span class="barTitle">Hours</span>
+				<span id="hourProgress" class="progressBar">
+					<span id="hourProgressBar" class="progressInner"></span>
+				</span>
+			</div>
+
+			<div class="timeBarContainer">
+				<span class="barTitle">Days</span>
+				<span id="dayProgress" class="progressBar">
+					<span id="dayProgressBar" class="progressInner"></span>
+				</span>
+			</div>
+
+			<div class="timeBarContainer">
+				<span class="barTitle">Months</span>
+				<span id="monthProgress" class="progressBar">
+					<span id="monthProgressBar" class="progressInner"></span>
+				</span>
+			</div>
+
+			<div class="yearBarContainer">
+				<span class="barTitle">Next Decade</span>
+				<span id="decadeProgress" class="progressBar">
+					<span id="decadeProgressBar" class="progressInner"></span>
+				</span>
+			</div>
+
+			<div class="yearBarContainer">
+				<span class="barTitle">Next Century</span>
+				<span id="centuryProgress" class="progressBar">
+					<span id="centuryProgressBar" class="progressInner"></span>
+				</span>
+			</div>
+
+			<div class="yearBarContainer">
+				<span class="barTitle">Next Millennium</span>
+				<span id="millenniumProgress" class="progressBar">
+					<span id="millenniumProgressBar" class="progressInner"></span>
+				</span>
+			</div>
 		</div>
 
 		<script src="main.js"></script>

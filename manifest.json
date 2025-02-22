@@ -1,10 +1,9 @@
 {
 	"manifest_version": 2,
-	"name": "Progress Bar New Tab",
+	"name": "ProgressBarNT",
 	"description": "A custom new tab page for Firefox.",
 	"version": "0.0.1",
 	"chrome_url_overrides": {
 		"newtab": "index.html"
-	},
-	"permissions": ["storage"]
+	}
 }
