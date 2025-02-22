@@ -32,6 +32,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.progressBars:hover {
+  cursor: default;
+}
 
 .timeBarContainer {
   width: 100%;
@@ -41,8 +44,16 @@ body {
   -webkit-box-flex: calc(20% - 50px);
       -ms-flex: calc(20% - 50px);
           flex: calc(20% - 50px);
+  border: 1px solid #616A80;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
   -webkit-box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px;
           box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px;
+}
+.timeBarContainer:hover {
+  background: #566077;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
 }
 
 .yearBarContainer {
@@ -53,8 +64,16 @@ body {
   -webkit-box-flex: calc(33% - 50px);
       -ms-flex: calc(33% - 50px);
           flex: calc(33% - 50px);
+  border: 1px solid #616A80;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
   -webkit-box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px;
           box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px;
+}
+.yearBarContainer:hover {
+  background: #566077;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
 }
 
 .barTitle {

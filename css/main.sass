@@ -18,6 +18,8 @@ body
     flex-wrap: wrap
     align-items: center
     justify-content: center
+    &:hover
+        cursor: default
 
 .timeBarContainer
     width: 100%
@@ -25,7 +27,12 @@ body
     border-radius: 6px
     background: #4F586E
     flex: calc(20% - 50px)
+    border: 1px solid #616A80
+    transition: background 0.15s
     box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
+    &:hover
+        background: #566077
+        transition: background 0.15s
 
 .yearBarContainer
     width: 100%
@@ -33,7 +40,12 @@ body
     border-radius: 6px
     background: #4F586E
     flex: calc(33% - 50px)
+    border: 1px solid #616A80
+    transition: background 0.15s
     box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
+    &:hover
+        background: #566077
+        transition: background 0.15s
 
 .barTitle
     font-size: 16pt
