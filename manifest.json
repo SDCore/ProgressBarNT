@@ -2,7 +2,10 @@
 	"manifest_version": 2,
 	"name": "ProgressBarNT",
 	"description": "A custom new tab page for Firefox.",
-	"version": "0.2.1",
+	"version": "0.2.2",
+	"icons": {
+		"48": "imgs/icon_48.png"
+	},
 	"chrome_url_overrides": {
 		"newtab": "index.html"
 	}
