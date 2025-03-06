@@ -24,28 +24,34 @@ body
 .timeBarContainer
     width: 100%
     padding: 8px
+    position: relative
     border-radius: 6px
     background: #4F586E
+    transition: all 0.15s
     flex: calc(20% - 50px)
     border: 1px solid #616A80
-    transition: background 0.15s
     box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
     &:hover
         background: #566077
-        transition: background 0.15s
+        transition: all 0.15s
+        &>.progressText
+            color: rgba(10, 10, 10, 0.55)
 
 .yearBarContainer
     width: 100%
     padding: 8px
+    position: relative
     border-radius: 6px
     background: #4F586E
+    transition: all 0.15s
     flex: calc(33% - 50px)
     border: 1px solid #616A80
-    transition: background 0.15s
     box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
     &:hover
         background: #566077
-        transition: background 0.15s
+        transition: all 0.15s
+        &>.progressText
+            color: rgba(10, 10, 10, 0.55)
 
 .barTitle
     font-size: 16pt
@@ -64,5 +70,16 @@ body
     height: 5px
     display: block
     border-radius: 6px
+    transition: all 0.5s
     background: #FF9F17
-    transition: width 0.5s
+
+.progressText
+    top: 8px
+    right: 8px
+    font-size: 12pt
+    margin-top: 5px
+    color: #4F586E
+    text-align: center
+    position: absolute
+    font-weight: lighter
+
