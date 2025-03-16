@@ -21,35 +21,19 @@ body
     &:hover
         cursor: default
 
-.timeBarContainer
+.barContainer
     width: 100%
     padding: 8px
     position: relative
     border-radius: 6px
     background: #4F586E
-    transition: all 0.15s
-    flex: calc(20% - 50px)
-    border: 1px solid #616A80
-    box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
-    &:hover
-        background: #566077
-        transition: all 0.15s
-        &>.progressText
-            color: rgba(10, 10, 10, 0.55)
-
-.yearBarContainer
-    width: 100%
-    padding: 8px
-    position: relative
-    border-radius: 6px
-    background: #4F586E
-    transition: all 0.15s
     flex: calc(33% - 50px)
     border: 1px solid #616A80
+    transition: all 0.15s ease-out
     box-shadow: rgba(25, 26, 27, 0.3) 0px 4px 8px 0px
     &:hover
         background: #566077
-        transition: all 0.15s
+        transition: all 0.15s ease-out
         &>.progressText
             color: rgba(10, 10, 10, 0.55)
 
